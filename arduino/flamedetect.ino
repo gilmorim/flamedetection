@@ -23,16 +23,16 @@ void setup()
 
 void loop()
 {
-  int fire = digitalRead(FLAME);
+  int fire = digitalRead(PIN_FLAME_SENSOR);
 
   if (fire == HIGH)
   {
-    digitalWrite(BUZZ, HIGH);
+    digitalWrite(PIN_BUZZER, HIGH);
     // Serial.println("Fire!");
   }
   else
   {
-    digitalWrite(BUZZ, LOW);
+    digitalWrite(PIN_BUZZER, LOW);
     // Serial.println("Peace...");
   }
 
